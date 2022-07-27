@@ -1,0 +1,164 @@
+:root {
+  --base: #640fcd;
+  --light: #ffffff;
+  --dark: #000000;
+
+  --mulish: 'Mulish', sans-serif;
+  --dmsans: 'DM Sans', sans-serif;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--mulish);
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav img {
+  padding: 1rem 0;
+}
+
+header nav ul li {
+  font-weight: 400;
+  font-size: 1rem;
+
+  list-style-type: none;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+header nav ul li a:hover {
+  font-weight: 700;
+  transition: all 100ms ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section h1 {
+  font-weight: 400;
+  padding: 2rem;
+  text-align: center;
+}
+
+main section h1 span {
+  color: var(--base);
+}
+
+main section p {
+  padding: 0 2rem;
+  text-align: justify;
+  font-family: var(--opensans);
+}
+
+main section button {
+  font-weight: 500;
+  font-family: var(--dmsans);
+
+  border: none;
+  background-color: var(--base);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  margin: 2rem 0;
+}
+
+main section button:hover {
+  cursor: pointer;
+  transform: translateY(0.2rem);
+  transition: all 200ms ease-in-out;
+}
+
+main section button img {
+  padding: 0 0.4rem;
+  width: 1.8rem;
+}
+
+main img {
+  max-width: 18rem;
+  padding: 0 2rem;
+}
+
+footer {
+  font-family: var(--mulish);
+  font-size: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  header nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    padding: 0.2rem 0 0.2rem 2rem;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: 50%;
+  }
+
+  main section h1 {
+    padding: 2rem 6rem;
+  }
+
+  main section p {
+    padding: 0 6rem;
+  }
+
+  main img {
+    max-width: 80%;
+    padding: 0 6rem;
+  }
+}
