@@ -8,6 +8,9 @@
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/)
+- [lite-server](https://github.com/johnpapa/lite-server)
 
 ## Content language
 
@@ -21,7 +24,17 @@ A fully responsive landing page of a gym.
 
 ## Run
 
-Install [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), right click on `index.html` file and then click on `Open with Live Server`.
+First install all dependencies:
+
+```
+npm install
+```
+
+Then run with:
+
+```
+npm run start
+```
 
 ## Contributing
 
