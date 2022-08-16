@@ -18,7 +18,7 @@
 
 ## About
 
-A fully responsive landing page of a gym.
+Landing page of a gym.
 
 ![Demo page preview](./assets/img/demo.png)
 
